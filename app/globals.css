@@ -1,26 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --font-main: "Manrope", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --spacing-18: 4.5rem; /* 72px */
+  --spacing-13: 3.25rem; /* 52px */
+  --spacing-17: 4.25rem; /* 68px */
+  --spacing-22: 5.5rem; /* 88px */
+  --spacing-25: 6.25rem; /* 100px */
+  --spacing-34: 8.5rem; /* 136px */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  --text-40: 2.5rem; /* 40px */
+  --text-64: 4rem; /* 64px */
+  --text-80: 5rem; /* 80px */
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  --color-primary-200: hsla(0, 0%, 60%, 1);
+  --color-primary-800: hsla(0, 0%, 11%, 1);
 }
