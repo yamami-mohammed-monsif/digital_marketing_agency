@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import BestServices from "@/components/BestServices";
+import RecentWork from "@/components/RecentWork";
 
 const page = () => {
   return (
@@ -8,6 +9,7 @@ const page = () => {
       <Hero />
       <About />
       <BestServices />
+      <RecentWork />
     </main>
   );
 };
