@@ -27,3 +27,10 @@ export const Services = [
   { id: 3, text: "Research and Discovery" },
   { id: 4, text: "Social Media Marketing" },
 ];
+
+export const socials = [
+  { id: 1, text: "LinkedIn", url: "/" },
+  { id: 2, text: "Dribbble", url: "/" },
+  { id: 3, text: "Behance", url: "/" },
+  { id: 4, text: "Instagram", url: "/" },
+];

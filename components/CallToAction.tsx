@@ -6,7 +6,7 @@ import Button from "./UI/Button";
 
 const CallToAction: React.FC = () => {
   return (
-    <Section className="bg-primary-800 text-white py-10 md:py-16">
+    <Section className="bg-primary-800 text-white py-10 md:py-16" noMargin>
       <div className="flex flex-col gap-6 md:flex-row md:gap-17 items-center justify-between">
         <Reveal color="white">
           <h2 className="m-0 md:text-[38px] lg:text-[42px] text-center md:text-left">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "@/components/Navigation/NavBar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "digital marketing agency",
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body>
         <NavBar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
