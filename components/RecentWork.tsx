@@ -13,7 +13,7 @@ const RecentWork: React.FC = () => {
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   return (
-    <Section>
+    <Section id="office">
       <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-9 md:mb-11 lg:mb-[58px] ">
         <Reveal>
           <h2>Recent Work!</h2>
@@ -23,6 +23,7 @@ const RecentWork: React.FC = () => {
           variant="secondary"
           paddingX="px-8"
           paddingY="py-4"
+          aria-label="See more of our work"
         >
           See More!
         </Button>
@@ -41,10 +42,11 @@ const RecentWork: React.FC = () => {
           <div className="relative w-full aspect-[335/401] sm:aspect-[400/480] lg:aspect-[595/713]">
             <Image
               src="/project1.webp"
-              alt="project1"
+              alt="Digital marketing campaign for an environmental company"
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 400px, 595px"
               className="object-cover hover:scale-110 transition-transform duration-700"
+              loading="lazy"
             />
           </div>
         </motion.div>
@@ -58,10 +60,11 @@ const RecentWork: React.FC = () => {
           <div className="relative w-full aspect-[335/401] sm:aspect-[400/480] lg:aspect-[595/713]">
             <Image
               src="/project2.webp"
-              alt="project2"
+              alt="Brand redesign for a tech startup"
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 400px, 595px"
               className="object-cover hover:scale-110 transition-transform duration-700"
+              loading="lazy"
             />
           </div>
         </motion.div>
@@ -75,10 +78,11 @@ const RecentWork: React.FC = () => {
           <div className="relative w-full aspect-[335/401] sm:aspect-[400/480] lg:aspect-[595/713]">
             <Image
               src="/project3.webp"
-              alt="project3"
+              alt="Social media campaign for a fashion brand"
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 400px, 595px"
               className="object-cover hover:scale-110 transition-transform duration-700"
+              loading="lazy"
             />
           </div>
         </motion.div>
@@ -92,10 +96,11 @@ const RecentWork: React.FC = () => {
           <div className="relative w-full aspect-[335/401] sm:aspect-[400/480] lg:aspect-[595/713]">
             <Image
               src="/project4.webp"
-              alt="project4"
+              alt="Website redesign for a financial services company"
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 400px, 595px"
               className="object-cover hover:scale-110 transition-transform duration-700"
+              loading="lazy"
             />
           </div>
         </motion.div>

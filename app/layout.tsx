@@ -23,9 +23,10 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "digital marketing agency",
+  title: "Digital Marketing Agency | Creative Solutions",
   description:
     "We provide comprehensive marketing solutions that help our clients reach their maximum potential.",
+  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({
@@ -37,6 +38,7 @@ export default function RootLayout({
     <html lang="en" className={`${manrope.variable} ${poppins.variable}`}>
       <head>
         <link rel="icon" href="/favicon.svg" />
+        <link rel="preload" href="/hero-image.webp" as="image" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body>
