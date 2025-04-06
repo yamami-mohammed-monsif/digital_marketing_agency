@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
         </Reveal>
       </h1>
       <div className="relative overflow-hidden">
-        <div className="relative w-full h-[495px] sm:w-[1055px] sm:h-[495px] lg:w-[1340px] lg:h-[629px] mx-auto">
+        <div className="relative w-full h-[495px] sm:w-[1055px] sm:h-[495px] lg:w-[1340px] lg:h-[629px] ml-auto">
           <Image
             src="/hero-image.webp"
             alt="hero image"

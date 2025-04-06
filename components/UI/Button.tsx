@@ -30,7 +30,7 @@ const Button: React.FC<buttonProps> = ({
         scale: 0.9,
       }}
       transition={{ duration: 0.2, ease: "easeOut" }}
-      className={`rounded-full cursor-pointer ${
+      className={`rounded-full cursor-pointer font-main ${
         variant === "primary"
           ? "bg-primary-800 text-white"
           : "bg-white text-primary-800 border"
