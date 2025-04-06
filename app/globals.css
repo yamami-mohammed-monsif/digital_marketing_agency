@@ -19,3 +19,17 @@
   --color-primary-200: hsla(0, 0%, 60%, 1);
   --color-primary-800: hsla(0, 0%, 11%, 1);
 }
+
+@layer base {
+  h1 {
+    @apply font-bold font-main text-[40px] md:text-[50px] lg:text-[80px] mb-6 md:mb-9 lg:mb-20 leading-[100%];
+  }
+
+  h2 {
+    @apply text-[36px] md:text-[43px] lg:text-[64px] font-medium leading-[135%] mb-4 md:mb-0;
+  }
+
+  h3 {
+    @apply text-[32px] md:text-[35px] lg:text-[40px] font-medium leading-[135%] mb-4;
+  }
+}

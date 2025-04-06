@@ -4,7 +4,8 @@ import NavBar from "@/components/Navigation/NavBar";
 
 export const metadata: Metadata = {
   title: "digital marketing agency",
-  description: "digital marketing agency",
+  description:
+    "We provide comprehensive marketing solutions that help our clients reach their maximum potential.",
 };
 
 export default function RootLayout({
