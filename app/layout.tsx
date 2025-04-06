@@ -2,6 +2,25 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "@/components/Navigation/NavBar";
 import Footer from "@/components/Footer";
+// Import the fonts from next/font
+import { Manrope, Poppins } from "next/font/google";
+
+// Configure Manrope font
+const manrope = Manrope({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-manrope",
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+});
+
+// Configure Poppins font
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
+});
 
 export const metadata: Metadata = {
   title: "digital marketing agency",
@@ -15,9 +34,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${manrope.variable} ${poppins.variable}`}>
       <head>
         <link rel="icon" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body>
         <NavBar />

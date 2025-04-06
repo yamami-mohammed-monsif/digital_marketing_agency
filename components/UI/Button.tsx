@@ -9,6 +9,7 @@ interface buttonProps {
   paddingY?: string;
   fontSize?: string;
   className?: string;
+  "aria-label"?: string;
 }
 
 const Button: React.FC<buttonProps> = ({
@@ -18,6 +19,7 @@ const Button: React.FC<buttonProps> = ({
   paddingY = "py-4",
   fontSize = "text-base",
   className,
+  "aria-label": ariaLabel,
 }) => {
   return (
     <motion.button
@@ -37,6 +39,7 @@ const Button: React.FC<buttonProps> = ({
           ? "bg-primary-800 text-white"
           : "bg-white text-primary-800 border"
       } ${paddingX} ${paddingY} ${fontSize} ${className}`}
+      aria-label={ariaLabel}
     >
       {children}
     </motion.button>

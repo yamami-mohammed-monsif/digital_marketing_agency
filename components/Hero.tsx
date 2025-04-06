@@ -20,16 +20,21 @@ const Hero: React.FC = () => {
           <span>with our creative solutions.</span>
         </Reveal>
       </h1>
-      <div className="relative overflow-hidden" ref={imageRef}>
+      <div
+        className="relative overflow-hidden"
+        ref={imageRef}
+        aria-label="Hero image section"
+      >
         <motion.div
           className="relative w-full h-[495px] sm:w-[1055px] sm:h-[495px] lg:w-[1340px] lg:h-[629px] ml-auto"
           initial={{ opacity: 0, x: 100 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
           transition={{ duration: 0.8, delay: 0.2 }}
+          aria-hidden="true"
         >
           <Image
             src="/hero-image.webp"
-            alt="hero image"
+            alt="Marketing professionals collaborating on creative solutions for brands"
             fill
             priority
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 1055px, 1340px"

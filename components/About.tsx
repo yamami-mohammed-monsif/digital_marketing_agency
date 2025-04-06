@@ -4,7 +4,7 @@ import Reveal from "./UI/Reveal";
 
 const About: React.FC = () => {
   return (
-    <Section className="md:grid grid-cols-2">
+    <Section className="md:grid grid-cols-2" id="about">
       <Reveal>
         <h2>About Us!</h2>
       </Reveal>
@@ -18,10 +18,16 @@ const About: React.FC = () => {
           </p>
         </Reveal>
 
-        <div className="md:hidden flex flex-col items-center gap-6 mb-6">
+        <div
+          className="md:hidden flex flex-col items-center gap-6 mb-6"
+          aria-label="Company statistics"
+        >
           <Reveal>
             <div>
-              <span className="block font-bold text-[64px] leading-[100%] mb-4">
+              <span
+                className="block font-bold text-[64px] leading-[100%] mb-4"
+                aria-label="Project count"
+              >
                 300+
               </span>
               <span className="text-[16px] font-medium">Project Completed</span>
@@ -29,7 +35,10 @@ const About: React.FC = () => {
           </Reveal>
           <Reveal>
             <div>
-              <span className="block font-bold text-[64px] leading-[100%] mb-4">
+              <span
+                className="block font-bold text-[64px] leading-[100%] mb-4"
+                aria-label="Team size"
+              >
                 25+
               </span>
               <span className="text-[16px] font-medium">
@@ -39,19 +48,25 @@ const About: React.FC = () => {
           </Reveal>
           <Reveal>
             <div>
-              <span className="block font-bold text-[64px] leading-[100%] mb-4">
-                300+
+              <span
+                className="block font-bold text-[64px] leading-[100%] mb-4"
+                aria-label="Happy clients"
+              >
+                200+
               </span>
-              <span className="text-[16px] font-medium">Project Completed</span>
+              <span className="text-[16px] font-medium">Satisfied Clients</span>
             </div>
           </Reveal>
           <Reveal>
             <div>
-              <span className="block font-bold text-[64px] leading-[100%] mb-4">
-                25+
+              <span
+                className="block font-bold text-[64px] leading-[100%] mb-4"
+                aria-label="Years of experience"
+              >
+                10+
               </span>
               <span className="text-[16px] font-medium">
-                Professional Teams
+                Years of Experience
               </span>
             </div>
           </Reveal>

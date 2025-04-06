@@ -21,6 +21,9 @@ const HamburgerButton = ({ isOpen, setIsOpen }: buttonProps) => {
     <button
       className="lg:hidden cursor-pointer z-40"
       onClick={() => setIsOpen(!isOpen)}
+      aria-label={isOpen ? "Close menu" : "Open menu"}
+      aria-expanded={isOpen}
+      aria-controls="mobile-menu"
     >
       <motion.svg
         width={24}
@@ -28,6 +31,7 @@ const HamburgerButton = ({ isOpen, setIsOpen }: buttonProps) => {
         viewBox="0 0 100 100"
         initial={false}
         animate={isOpen ? "open" : "closed"}
+        aria-hidden="true"
       >
         <Path
           variants={{
