@@ -19,31 +19,20 @@
   --color-primary-800: hsla(0, 0%, 11%, 1);
 }
 
-/* Optimize layout shifts by setting base styles */
 @layer base {
   body {
-    @apply font-main text-primary-800 text-[18px] leading-[180%] relative min-h-screen;
-    text-rendering: optimizeSpeed;
-    -webkit-font-smoothing: antialiased;
+    @apply font-main text-primary-800 text-[18px] leading-[180%] relative;
   }
 
   h1 {
     @apply font-bold font-main text-[40px] md:text-[50px] lg:text-[80px] mb-6 md:mb-9 lg:mb-20 leading-[100%];
-    content-visibility: auto;
   }
 
   h2 {
     @apply text-[36px] md:text-[43px] lg:text-[64px] font-medium leading-[135%] mb-4 md:mb-0;
-    content-visibility: auto;
   }
 
   h3 {
     @apply text-[32px] md:text-[35px] lg:text-[40px] font-medium leading-[135%] mb-4;
-    content-visibility: auto;
-  }
-
-  img {
-    height: auto;
-    max-width: 100%;
   }
 }

@@ -40,10 +40,6 @@ const Hero: React.FC = () => {
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 1055px, 1340px"
             className="object-cover"
             loading="eager"
-            fetchPriority="high"
-            quality={80}
-            placeholder="blur"
-            blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNlMGUwZTAiLz48L3N2Zz4="
           />
         </motion.div>
       </div>

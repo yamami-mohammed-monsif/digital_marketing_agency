@@ -7,17 +7,15 @@ type revealProps = {
   children: JSX.Element;
   color?: string;
   className?: string;
-  delay?: number;
 };
 
 const Reveal = ({
   children,
   color = "hsla(0, 0%, 11%, 1)",
   className,
-  delay = 0.25,
 }: revealProps) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.3 });
+  const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
   const slideControls = useAnimation();
 
@@ -26,13 +24,10 @@ const Reveal = ({
       mainControls.start("visible");
       slideControls.start("visible");
     }
-  }, [isInView, mainControls, slideControls]);
+  }, [isInView]);
 
   return (
-    <div
-      ref={ref}
-      className={`relative w-fit overflow-hidden ${className || ""}`}
-    >
+    <div ref={ref} className={`relative w-fit overflow-hidden ${className}`}>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
@@ -40,13 +35,7 @@ const Reveal = ({
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{
-          duration: 0.5,
-          delay,
-          willChange: "transform, opacity",
-          translateY: [75, 0],
-          translateZ: 0, // Force hardware acceleration
-        }}
+        transition={{ duration: 0.5, delay: 0.25 }}
       >
         {children}
       </motion.div>
@@ -57,19 +46,9 @@ const Reveal = ({
         }}
         initial="hidden"
         animate={slideControls}
-        transition={{
-          duration: 0.5,
-          ease: "easeIn",
-          willChange: "transform",
-          translateZ: 0, // Force hardware acceleration
-        }}
+        transition={{ duration: 0.5, ease: "easeIn" }}
         className="absolute top-1 bottom-1 left-0 right-0 z-20"
-        style={{
-          backgroundColor: color,
-          willChange: "transform",
-          transform: isInView ? "translateX(100%)" : "translateX(0)",
-          transition: "transform 0.5s ease-in",
-        }}
+        style={{ backgroundColor: color }}
       />
     </div>
   );
