@@ -3,6 +3,7 @@ import About from "@/components/About";
 import BestServices from "@/components/BestServices";
 import RecentWork from "@/components/RecentWork";
 import Testimonials from "@/components/Testimonials";
+import CallToAction from "@/components/CallToAction";
 
 const page = () => {
   return (
@@ -12,6 +13,7 @@ const page = () => {
       <BestServices />
       <RecentWork />
       <Testimonials />
+      <CallToAction />
     </main>
   );
 };
