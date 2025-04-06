@@ -1,8 +1,15 @@
+"use client";
+
 import Section from "./UI/Section";
 import Reveal from "./UI/Reveal";
 import Image from "next/image";
+import { motion, useInView } from "motion/react";
+import { useRef } from "react";
 
 const Hero: React.FC = () => {
+  const imageRef = useRef(null);
+  const isInView = useInView(imageRef, { once: true, amount: 0.3 });
+
   return (
     <Section>
       <h1>
@@ -13,8 +20,13 @@ const Hero: React.FC = () => {
           <span>with our creative solutions.</span>
         </Reveal>
       </h1>
-      <div className="relative overflow-hidden">
-        <div className="relative w-full h-[495px] sm:w-[1055px] sm:h-[495px] lg:w-[1340px] lg:h-[629px] ml-auto">
+      <div className="relative overflow-hidden" ref={imageRef}>
+        <motion.div
+          className="relative w-full h-[495px] sm:w-[1055px] sm:h-[495px] lg:w-[1340px] lg:h-[629px] ml-auto"
+          initial={{ opacity: 0, x: 100 }}
+          animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
           <Image
             src="/hero-image.webp"
             alt="hero image"
@@ -24,7 +36,7 @@ const Hero: React.FC = () => {
             className="object-cover"
             loading="eager"
           />
-        </div>
+        </motion.div>
       </div>
     </Section>
   );
