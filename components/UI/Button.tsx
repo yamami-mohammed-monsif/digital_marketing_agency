@@ -8,6 +8,7 @@ interface buttonProps {
   paddingX?: string;
   paddingY?: string;
   fontSize?: string;
+  className?: string;
 }
 
 const Button: React.FC<buttonProps> = ({
@@ -16,6 +17,7 @@ const Button: React.FC<buttonProps> = ({
   paddingX = "px-8",
   paddingY = "py-4",
   fontSize = "text-base",
+  className,
 }) => {
   return (
     <motion.button
@@ -34,7 +36,7 @@ const Button: React.FC<buttonProps> = ({
         variant === "primary"
           ? "bg-primary-800 text-white"
           : "bg-white text-primary-800 border"
-      } ${paddingX} ${paddingY} ${fontSize} `}
+      } ${paddingX} ${paddingY} ${fontSize} ${className}`}
     >
       {children}
     </motion.button>
