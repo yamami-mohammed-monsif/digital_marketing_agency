@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Digital Marketing Agency
 
-## Getting Started
+A modern, high-performance website for a digital marketing agency built with Next.js and optimized for accessibility and SEO.
 
-First, run the development server:
+![Digital Marketing Agency Website](/public/hero-image.webp)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📋 Table of Content
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Demo](#demo)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Contributing](#contributing)
+- [License](#license)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+You can view the live demo of the website [here](https://digital-marketing-agency-liard.vercel.app/)
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- **High Performance**: Optimized for fast loading times with a Lighthouse performance score of 90+
+- **Responsive Design**: Fully responsive layout that works on all devices and screen sizes
+- **Accessibility Compliant**: Built with accessibility in mind, achieving a Lighthouse score of 86+
+- **SEO Optimized**: Perfect 100/100 SEO score in Lighthouse
+- **Modern Animations**: Smooth page transitions and element animations using Framer Motion
+- **Best Practices**: Follows modern web development best practices with a perfect 100/100 score in Lighthouse
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Key Sections
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Hero banner with animated entrance
+- About section featuring company statistics
+- Services showcase highlighting key offerings
+- Portfolio of recent work with interactive elements
+- Testimonials from satisfied clients
+- Contact call-to-action section
+- Fully accessible navigation system
 
-## Deploy on Vercel
+## Technologies Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Next.js**: React framework for server-side rendering and static site generation
+- **TypeScript**: For type-safe code
+- **Tailwind CSS**: For utility-based styling
+- **Framer Motion**: For smooth animations and transitions
+- **Next/Image**: For optimized image loading and display
+- **Vercel**: For deployment and hosting
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Installation
+
+Follow these steps to run the project locally:
+
+1. Clone the repository
+
+   ```bash
+   git clone https://github.com/yamami-mohammed-monsif/digital_marketing_agency.git
+   cd digital_marketing_agency
+   ```
+
+2. Install dependencies
+
+   ```bash
+   npm install
+   ```
+
+3. Run the development server
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.txt](./LICENCE.txt) file for details.
+
+---
+
+Designed and developed with ❤️ using Next.js, TypeScript, and Tailwind CSS.
