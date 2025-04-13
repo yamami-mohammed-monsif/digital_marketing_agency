@@ -1,7 +1,6 @@
 "use client";
 
 import { NavLinks } from "@/constants";
-import Link from "next/link";
 import Button from "../UI/Button";
 import NavLink from "../UI/NavLink";
 import { motion } from "motion/react";
@@ -9,9 +8,10 @@ import { useEffect } from "react";
 
 type navProps = {
   isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
 };
 
-const MobileNav: React.FC<navProps> = ({ isOpen }) => {
+const MobileNav: React.FC<navProps> = ({ isOpen, setIsOpen }) => {
   // Prevent scrolling when menu is open
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
@@ -37,12 +37,9 @@ const MobileNav: React.FC<navProps> = ({ isOpen }) => {
     >
       {NavLinks.map((item) => {
         return (
-          <NavLink
-            key={item.id}
-            href={item.href}
-            label={item.label}
-            role="menuitem"
-          />
+          <li key={item.id} onClick={() => setIsOpen(false)}>
+            <NavLink href={item.href} label={item.label} role="menuitem" />
+          </li>
         );
       })}
       <li role="none">

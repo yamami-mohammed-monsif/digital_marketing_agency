@@ -15,7 +15,7 @@ const NavBar: React.FC = () => {
         className="aspect-square w-6 sm:w-9 md:w-10 lg:w-13 xl:w-[62px]"
       />
       <HamburgerButton isOpen={isOpen} setIsOpen={setIsOpen} />
-      <MobileNav isOpen={isOpen} />
+      <MobileNav isOpen={isOpen} setIsOpen={setIsOpen} />
       {isOpen && (
         <div
           className="fixed inset-0 bg-primary-800/30 z-20"
