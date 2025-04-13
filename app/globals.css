@@ -20,6 +20,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply font-main text-primary-800 text-[18px] leading-[180%] relative;
   }
