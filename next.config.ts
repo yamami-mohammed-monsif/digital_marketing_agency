@@ -4,9 +4,6 @@ const nextConfig: NextConfig = {
   // Enable gzip compression
   compress: true,
 
-  // Enable SWC minification
-  swcMinify: true,
-
   // Image optimization settings
   images: {
     formats: ["image/avif", "image/webp"],

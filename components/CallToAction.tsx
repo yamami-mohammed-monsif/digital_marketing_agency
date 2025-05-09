@@ -1,4 +1,3 @@
-import React from "react";
 import Section from "./UI/Section";
 import { ArrowHorizontal, ArrowVertical } from "./UI/icons";
 import Reveal from "./UI/Reveal";

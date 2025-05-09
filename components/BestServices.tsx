@@ -1,6 +1,3 @@
-"use client";
-
-import React from "react";
 import Section from "./UI/Section";
 import Button from "./UI/Button";
 import Reveal from "./UI/Reveal";

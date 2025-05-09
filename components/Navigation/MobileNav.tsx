@@ -37,9 +37,13 @@ const MobileNav: React.FC<navProps> = ({ isOpen, setIsOpen }) => {
     >
       {NavLinks.map((item) => {
         return (
-          <li key={item.id} onClick={() => setIsOpen(false)}>
-            <NavLink href={item.href} label={item.label} role="menuitem" />
-          </li>
+          <NavLink
+            key={item.id}
+            href={item.href}
+            label={item.label}
+            role="menuitem"
+            onClick={() => setIsOpen(false)}
+          />
         );
       })}
       <li role="none">

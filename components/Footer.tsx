@@ -58,6 +58,7 @@ const Footer = () => {
                       className="inline-block"
                       href={item.url}
                       target="_blank"
+                      aria-label={`Visit our ${item.text} page`}
                       whileHover={{
                         textShadow: "0px 0px 10px rgba(255,255,255,0.8)",
                         scale: 1.1,
@@ -77,6 +78,7 @@ const Footer = () => {
                     <motion.a
                       className="inline-block"
                       href="#"
+                      aria-label={text}
                       whileHover={{
                         textShadow: "0px 0px 8px rgba(255,255,255,0.8)",
                         scale: 1.1,

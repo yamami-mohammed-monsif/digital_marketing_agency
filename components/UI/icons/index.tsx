@@ -21,6 +21,8 @@ export const ArrowHorizontal: React.FC<ArrowIconProps> = ({
       viewBox="0 0 379 27"
       fill="none"
       className={className}
+      aria-hidden="true"
+      focusable="false"
     >
       <path
         d="M365 25.291L376.791 13.5003L365 1.70957"
@@ -55,6 +57,7 @@ export const ArrowVertical: React.FC<ArrowIconProps> = ({
       viewBox="0 0 28 132"
       fill="none"
       className={className}
+      aria-hidden="true"
     >
       <path
         d="M2.41852 118L14.2092 129.791L26 118"

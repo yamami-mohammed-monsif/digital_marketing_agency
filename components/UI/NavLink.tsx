@@ -6,6 +6,7 @@ type navLinkProps = {
   label: string;
   role?: string;
   className?: string;
+  onClick?: () => void;
 };
 
 const NavLink: React.FC<navLinkProps> = ({ href, label, role, className }) => {

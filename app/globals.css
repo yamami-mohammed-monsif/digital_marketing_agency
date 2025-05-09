@@ -17,6 +17,31 @@
 
   --color-primary-200: hsla(0, 0%, 60%, 1);
   --color-primary-800: hsla(0, 0%, 11%, 1);
+
+  --animate-fade-in-right: fade-in-right 0.5s ease-out 0.2s;
+  --animate-fade-in-left: fade-in-left 0.5s ease-out 0.2s;
+
+  @keyframes fade-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fade-in-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 }
 
 @layer base {
