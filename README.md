@@ -10,6 +10,7 @@ A modern, high-performance website for a digital marketing agency built with Nex
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
+- [Lighthouse Report](#lighthouse-report)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -69,6 +70,12 @@ Follow these steps to run the project locally:
    ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result
+
+## Lighthouse Report
+
+This project has been optimized for performance, accessibility, SEO, and best practices. Below is a summary of the Lighthouse audit:
+
+![Lighthouse Report](public/lighthouse-report.png)
 
 ## Contributing
 

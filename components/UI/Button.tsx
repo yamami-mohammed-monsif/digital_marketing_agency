@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, MotionProvider } from "../utils/MotionProvider";
 
 interface buttonProps {
   children: React.ReactNode;
@@ -22,27 +22,29 @@ const Button: React.FC<buttonProps> = ({
   "aria-label": ariaLabel,
 }) => {
   return (
-    <motion.button
-      whileHover={{
-        scale: 1.05,
-        y: -5,
-        boxShadow: "0px 10px 15px rgba(0, 0, 0, 0.3)",
-        backgroundColor: "#ffff",
-        color: "hsla(0, 0%, 11%, 1)",
-      }}
-      whileTap={{
-        scale: 0.9,
-      }}
-      transition={{ duration: 0.2, ease: "easeOut" }}
-      className={`rounded-full cursor-pointer font-main ${
-        variant === "primary"
-          ? "bg-primary-800 text-white"
-          : "bg-white text-primary-800 border"
-      } ${paddingX} ${paddingY} ${fontSize} ${className}`}
-      aria-label={ariaLabel}
-    >
-      {children}
-    </motion.button>
+    <MotionProvider>
+      <motion.button
+        whileHover={{
+          scale: 1.05,
+          y: -5,
+          boxShadow: "0px 10px 15px rgba(0, 0, 0, 0.3)",
+          backgroundColor: "#ffff",
+          color: "hsla(0, 0%, 11%, 1)",
+        }}
+        whileTap={{
+          scale: 0.9,
+        }}
+        transition={{ duration: 0.2, ease: "easeOut" }}
+        className={`rounded-full cursor-pointer font-main ${
+          variant === "primary"
+            ? "bg-primary-800 text-white"
+            : "bg-white text-primary-800 border"
+        } ${paddingX} ${paddingY} ${fontSize} ${className}`}
+        aria-label={ariaLabel}
+      >
+        {children}
+      </motion.button>
+    </MotionProvider>
   );
 };
 

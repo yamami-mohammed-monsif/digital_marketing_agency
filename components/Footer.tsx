@@ -5,7 +5,6 @@ import Reveal from "./UI/Reveal";
 import Logo from "./UI/Logo";
 import Section from "./UI/Section";
 import { NavLinks, socials } from "@/constants";
-import { motion } from "motion/react";
 
 const Footer = () => {
   return (
@@ -35,17 +34,12 @@ const Footer = () => {
               {NavLinks.map((item) => {
                 return (
                   <li key={item.id}>
-                    <motion.a
-                      className="inline-block"
+                    <a
+                      className="transition duration-200 hover:scale-110 hover:[text-shadow:0px_0px_8px_rgba(255,255,255,0.8)]"
                       href={item.href}
-                      whileHover={{
-                        textShadow: "0px 0px 10px rgba(255,255,255,0.8)",
-                        scale: 1.1,
-                      }}
-                      transition={{ duration: 0.2 }}
                     >
                       {item.label}
-                    </motion.a>
+                    </a>
                   </li>
                 );
               })}
@@ -54,19 +48,14 @@ const Footer = () => {
               {socials.map((item) => {
                 return (
                   <li key={item.id}>
-                    <motion.a
-                      className="inline-block"
+                    <a
+                      className="transition duration-200 hover:scale-110 hover:[text-shadow:0px_0px_8px_rgba(255,255,255,0.8)]"
                       href={item.url}
                       target="_blank"
                       aria-label={`Visit our ${item.text} page`}
-                      whileHover={{
-                        textShadow: "0px 0px 10px rgba(255,255,255,0.8)",
-                        scale: 1.1,
-                      }}
-                      transition={{ duration: 0.2 }}
                     >
                       {item.text}
-                    </motion.a>
+                    </a>
                   </li>
                 );
               })}
@@ -75,18 +64,13 @@ const Footer = () => {
               {["Privacy", "Terms and Conditions", "FAQ's"].map(
                 (text, index) => (
                   <li key={index}>
-                    <motion.a
-                      className="inline-block"
+                    <a
+                      className="transition duration-200 hover:scale-110 hover:[text-shadow:0px_0px_8px_rgba(255,255,255,0.8)]"
                       href="#"
                       aria-label={text}
-                      whileHover={{
-                        textShadow: "0px 0px 8px rgba(255,255,255,0.8)",
-                        scale: 1.1,
-                      }}
-                      transition={{ duration: 0.2 }}
                     >
                       {text}
-                    </motion.a>
+                    </a>
                   </li>
                 )
               )}

@@ -1,15 +1,8 @@
-"use client";
-
 import Section from "./UI/Section";
 import Reveal from "./UI/Reveal";
 import Image from "next/image";
-import { useInView } from "motion/react";
-import { useRef } from "react";
 
 const Hero: React.FC = () => {
-  const imageRef = useRef(null);
-  const isInView = useInView(imageRef, { once: true, amount: 0.3 });
-
   return (
     <Section>
       <h1>
